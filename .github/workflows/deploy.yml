@@ -22,7 +22,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./Login-Part2 # <-- هذا هو المسار لمجلد مشروعك
+          path: /Login-Part2 # <-- هذا هو المسار لمجلد مشروعك
       
   deploy:
     needs: build
