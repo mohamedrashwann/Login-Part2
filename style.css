@@ -13,21 +13,23 @@ body {
   justify-content: center;
   margin: 0;
   height: 100vh;
-  background-image: url(/particles-flow.gif);
+  background-image: url(/background2.gif);
   background-repeat: no-repeat;
   background-position: center;
+  
   color: #ffffff;
   font-family: "Euclid Circular A", "Poppins";
 }
 .rebot {
     width: 50%;
+    margin-right: 30px;
     height: 100%;
 }
 
 .login {
   position: relative;
   z-index: 2;
-  background:#e0000014;
+  background:#000000ac;
   backdrop-filter: blur(5px);
   border-radius: 24px;
   padding: 10px 32px 20px;
@@ -50,8 +52,9 @@ body {
 }
 
 .login h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 0 6px;
+  font-weight: 900;
 }
 
 .login h3 {
@@ -92,7 +95,7 @@ input {
   translate: 0 -50%;
   transform-origin: 0 50%;
   pointer-events: none;
-  color: var(--color-muted);
+  color: white;
 }
 
 .textbox input {
