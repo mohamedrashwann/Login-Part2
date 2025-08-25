@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #8a79e2;
+  --color-muted: #ada5b4;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  background-image: url(/particles-flow.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  font-family: "Euclid Circular A", "Poppins";
+}
+.rebot {
+    width: 50%;
+    height: 100%;
+}
+
+.login {
+  position: relative;
+  z-index: 2;
+  background:#e0000014;
+  backdrop-filter: blur(5px);
+  border-radius: 24px;
+  padding: 10px 32px 20px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.307);
+}
+
+.login img {
+  width: 108px;
+  margin: 0 0 px;
+}
+
+.login :is(h2, h3) {
+  font-weight: 500;
+}
+
+.login h2 {
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+
+.login h3 {
+  color: var(--color-muted);
+  font-size: 13px;
+  margin: 0 0 42px;
+}
+
+.login form {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.login :is(input, button) {
+  height: 52px;
+  font-family: inherit;
+  font-size: 15px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 6px;
+}
+
+.login .textbox {
+  position: relative;
+}
+
+label,
+input {
+  transition: 0.3s;
+}
+
+.textbox label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  translate: 0 -50%;
+  transform-origin: 0 50%;
+  pointer-events: none;
+  color: var(--color-muted);
+}
+
+.textbox input {
+  width: 100%;
+  padding-top: 10px;
+  background: rgb(255 255 255 / 4%);
+  outline: none;
+  color: inherit;
+  box-shadow: 0 0 0 2px transparent;
+}
+
+.textbox input:focus {
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.textbox input:is(:focus, :not(:invalid)) ~ label {
+  scale: 0.725;
+  translate: 0 -112%;
+}
+
+.login button {
+  color: #f9f9f9;
+  background:linear-gradient(127deg,rgba(224, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 55%, rgba(41, 2, 2, 1) 100%);;
+}
+
+.login a {
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+.login p {
+  margin: 48px 0 0;
+  font-size: 14px;
+  color: var(--color-muted);
+}
